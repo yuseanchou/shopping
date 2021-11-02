@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<!-- <view class="container">
+  <view class="">
+    <block wx:for="{{person}}" wx:for-item="item" wx:for-index="idx" wx:key="">
+      <view class="i-for">
+        <view class="i-left">姓名：{{item.name}}</view>
+        <view class="i-left">姓别：{{item.sex}}</view>
+      
+      <view class="i-for2">
+        <view class="i-left">区域选择:</view>
+        <picker bindchange="bindPickerChange" value="{{areaIndex}}" data-current="{{idx}}" range="{{area}}" data-prearea="{{item.come}}">
+          <view class="i-left">
+            <input value="{{area[areaIndex[idx]]}}" disabled />
+          </view>
+        </picker>
+      </view>
+      </view>
+    </block>
+  </view>
+</view> -->
+<view class="add">
+  <button style="background-color: darkseagreen;" bindtap="addThing">+</button>
+  <button style="background-color:firebrick" bindtap="delThing">-</button>
+</view>
+<block wx:for="{{lists}}" wx:key="{{index}}" wx:for-item="item">
+  <view class="thingsName">
+ <view class="section__title">借用器材：</view>
+ <picker name="thingsPicker" bindchange="bindThingsPicker" data-current="{{index}}" value="{{item.indexk}}" range="{{things}}">
+  <view class="picker">
+   {{things[item.indexk]}}
+  </view>
+ </picker>
+</view>
+
+<view class="num">
+ <view class="section__title">数量：</view>
+ <slider value="10" name="num" show-value max="20"></slider>
+</view>
+</block> 

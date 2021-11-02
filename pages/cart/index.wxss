@@ -1,0 +1,37 @@
+/* pages/cart/index.wxss */
+.content {
+  display: flex;
+ height: calc( 100vh - 90rpx );
+}
+.content .left-content {
+  flex: 2;
+}
+.content .left-content view {
+  margin-top: 20rpx;
+  font-size: 30rpx;
+  letter-spacing: 1px;
+  vertical-align: middle;
+  text-align: center;
+  word-spacing: 3px;
+}
+.content .right-content {
+  flex: 5;
+}
+.content .right-content .rightNav {
+  margin: 20rpx 0 10rpx;
+}
+
+.content .right-content .goods-list  {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.content .right-content .goods-list navigator{
+  width: 33.3%;
+}
+.content .right-content .goods-list navigator  image {
+  width: 100%;
+}
+.one {
+  height: 17px;
+}

@@ -1,0 +1,42 @@
+{
+    "setting": {},
+    "condition": {
+        "plugin": {
+            "list": []
+        },
+        "game": {
+            "list": []
+        },
+        "gamePlugin": {
+            "list": []
+        },
+        "miniprogram": {
+            "list": [
+                {
+                    "name": "pages/category/index",
+                    "pathName": "pages/category/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/cart/index",
+                    "pathName": "pages/cart/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/my/index",
+                    "pathName": "pages/my/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "搜索",
+                    "pathName": "pages/goods-list/goods-list",
+                    "query": "cid=10",
+                    "scene": null
+                }
+            ]
+        }
+    }
+}

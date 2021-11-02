@@ -1,0 +1,25 @@
+/* pages/cart/index.wxss */
+.content {
+  display: flex;
+  .left-content {
+    flex: 2;
+    // background-color: pink;
+  }
+  .right-content {
+    flex: 5;
+    // background-color: skyblue;
+    .goods-list {
+      navigator {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        > view {
+          width: 33.3%;
+          image {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

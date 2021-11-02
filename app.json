@@ -1,0 +1,57 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/category/index",
+        "pages/cart/index",
+        "pages/my/index",
+        "pages/collect/index",
+        "pages/feedback/index",
+        "pages/good_detail/index",
+        "pages/login/index",
+        "pages/order/index",
+        "pages/search/index",
+        "pages/pay/index",
+        "pages/goods-list/goods-list"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#ff3731",
+        "navigationBarTitleText": "购物",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "color": "#999",
+        "selectedColor": "#ff3731",
+        "backgroundColor": "#f7faf7",
+        "position": "bottom",
+        "borderStyle": "black",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "icons/home.png",
+                "selectedIconPath": "icons/home-o.png"
+            },
+            {
+                "pagePath": "pages/cart/index",
+                "text": "购物",
+                "iconPath": "icons/cart.png",
+                "selectedIconPath": "icons/cart-o.png"
+            },
+            {
+                "pagePath": "pages/category/index",
+                "text": "分类",
+                "iconPath": "icons/category.png",
+                "selectedIconPath": "icons/category-o.png"
+            },
+            {
+                "pagePath": "pages/my/index",
+                "text": "我的",
+                "iconPath": "icons/my.png",
+                "selectedIconPath": "icons/my-o.png"
+            }
+        ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}

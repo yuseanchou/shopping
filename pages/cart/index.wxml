@@ -1,0 +1,40 @@
+<!--pages/cart/index.wxml-->
+<view>
+  <searchinput></searchinput>
+  <!-- 内容 -->
+  <view class="content">
+    <!-- 左边商品栏 -->
+    <scroll-view class="left-content">
+      <view>
+        <view
+          wx:for="{{ leftMenuList }}"
+          wx:key="index"
+          bindtap="handleItemTap"
+          id="ji2"
+          data-index="{{ index }}"
+        >
+          {{ item }}
+        </view>
+      </view>
+    </scroll-view>
+    <!-- 右边商品栏 -->
+    <scroll-view class="right-content">
+      <view>
+        <view wx:for="{{ rightContent }}" wx:key="cat_id">
+          <!-- 标题 -->
+          <view class="rightNav">{{ item.cat_name }}</view>
+          <!-- 列表 -->
+          <view class="goods-list">
+            <navigator wx:for="{{ item.children }}" wx:key="index" url="/pages/goods-list/goods-list?cid={{item.cat_id}}">
+                <image src="{{ item.cat_icon }}" mode="widthFix"></image>
+                <view>
+                  {{ item.cat_name }}
+                </view>
+            </navigator>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>
+

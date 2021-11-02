@@ -1,0 +1,13 @@
+/* components/tabs/tabs.wxss */
+.tabs-title {
+  display: flex;
+}
+.tabs-title > view {
+  text-align: center;
+  flex: 1;
+  padding: 30rpx 0;
+}
+.isActive {
+  color: red;
+  border-bottom: 5rpx solid currentColor;
+}
